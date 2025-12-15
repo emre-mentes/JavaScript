@@ -1,1 +1,1 @@
-console.log("bu bir external scripttir")
+console.log("Bu bir external scripttir")
