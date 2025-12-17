@@ -19,10 +19,10 @@
       }
 
       .text-style {
-        color: green;
+        color: #efefef;
         text-shadow: 3px 3px 5px black;
+        padding: 2rem;
       }
-
     </style>
   </head>
   <body>
@@ -38,8 +38,10 @@
     <script>
       let pE1 = document.querySelector("#pE1");
       console.log(pE1.classList[1]);
-      pE1.classList.add("text-style")
-      pE1.classList.remove("red")
+      pE1.classList.add("text-style");
+      pE1.classList.remove("red");
+      pE1.classList.add("blue");
+      console.log(pE1.classList);
     </script>
   </body>
 </html>
