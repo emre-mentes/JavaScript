@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  
+    <p class="desc">
+      Lorem ipsum dolor sit amet consectetur, <b> fsdfdsf dfds</b> elit.
+      Voluptatum expedita modi, inventore quos sed, odio dolorum dolores quis
+      cumque aliquid tenetur perferendis temporibus. Totam soluta repellat
+      accusantium et dolor qui!
+    </p>
+
+    <ul class="menu">
+      <li>home</li>
+      <li>about</li>
+      <li>contact</li>
+    </ul>
+    <script>
+      const elH1 = document.querySelector("h1");
+      console.log(elH1.innerText);
+
+      elH1.innerText="hello Javascript"
+      elH1.innerHTML="hello <em>Javascript</em>"
+
+      const elHome = document.querySelector(".menu li:first-child");
+      elHome.innerText="Anasayfa";
+
+      const allLi = document.querySelectorAll(".menu li");
+      console.log(allLi);
+
+      const eldesc = document.querySelector(".desc");
+      console.log(eldesc.innerText);
+      console.log(eldesc.innerHTML);
+
+
+    </script>
+  </body>
+</html>
