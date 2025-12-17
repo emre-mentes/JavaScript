@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-style {
+        color: green;
+        text-shadow: 3px 3px 5px black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <p id="pE1" class="red text-center">
+      Lorem ipsum dolor sit amet consectetur, <b> fsdfdsf dfds</b> elit.
+      Voluptatum expedita modi, inventore quos sed, odio dolorum dolores quis
+      cumque aliquid tenetur perferendis temporibus. Totam soluta repellat
+      accusantium et dolor qui!
+    </p>
+
+    <script>
+      let pE1 = document.querySelector("#pE1");
+      console.log(pE1.classList[1]);
+      pE1.classList.add("text-style")
+      pE1.classList.remove("red")
+    </script>
+  </body>
+</html>
