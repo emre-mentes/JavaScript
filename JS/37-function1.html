@@ -6,13 +6,16 @@
     <title>Document</title>
   </head>
   <body>
+
     <input type="text" id="txtNumber" />
     <button onclick="handleCalculateClick()">Calculate</button>
 
     <h4 id="result"></h4>
 
     <script>
+
       function handleCalculateClick() {
+        
         const num = document.querySelector("#txtNumber").value;
 
         const result = calculateFactoriel(num);
@@ -36,7 +39,7 @@
       }
 
       alert(calculateFactoriel(10));
-      
+
     </script>
   </body>
 </html>
