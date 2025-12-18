@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <button onclick="setUserInfo()">Click me</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+      let price = 123;
+      
+      //price>50 && message();
+      price>300 || (price=price*2)
+      console.log(price)
+
+      function message(){
+        alert("Hello world")
+      }
+
+      /*
+      Başlangıç: price = 123
+
+İfade: price > 300 || (price = price * 2)
+
+price > 300 → 123 > 300 → false
+
+JavaScript’te OR (||) operatörü şöyle çalışır:
+
+Eğer sol taraf true ise, sağ tarafı hiç çalıştırmaz.
+
+Eğer sol taraf false ise, sağ tarafı çalıştırır.
+
+Sağ taraf çalışıyor: (price = price * 2)
+
+price * 2 = 123 * 2 = 246
+
+price artık 246 oldu
+
+console.log(price) → artık price = 246, o yüzden konsola 246 yazıyor.
+
+🔹 Özet: OR operatörü sayesinde sol taraf false olduğu için sağ taraf çalıştı ve fiyat iki katına çıktı.
+      */
+
+
+
+
+
+    </script>
+    
+  </body>
+</html>
