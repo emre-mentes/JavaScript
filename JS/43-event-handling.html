@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <button onclick="onClick1()">click 1</button>
+    <button id="btn2">click 2</button>
+    <button id="btn3">click 3</button>
+    <button id="btn4">click 4</button>
+    <button id="btn5">click 5</button>
+    <button id="btn6">click 6</button>
+
+    
+
+    <script>
+
+      // 1 . yöntem
+      function onClick1() {
+        alert("1. butona tiklandi")
+      }
+      
+
+      // 2. yöntem
+      function onClick2() {
+        alert("2. butona tiklandi")
+      }
+      document.querySelector("#btn2").onclick = onClick2;
+      
+
+      // 3. yöntem
+      document.querySelector("#btn3").onclick = function(){
+        alert("3. butona tiklandi")
+      }
+
+
+      // 4 . yöntem
+      document.querySelector("#btn4").onclick = ()=>{
+        alert("4. butona tiklandi")
+      }
+
+
+      // 5 . yöntem
+      const onClick5 = () => {
+        alert("5. butona tiklandi");
+      }
+      document.querySelector("#btn5").addEventListener("click",onClick5);
+      
+
+      // 6 . yöntem
+      
+      document.querySelector("#btn6").addEventListener("click", () => {
+        alert("6. butona tiklandi");
+      });
+      
+
+
+    </script>
+  </body>
+</html>
