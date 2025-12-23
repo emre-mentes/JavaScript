@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+
+
+      const car = {
+
+        id:"123",
+        brand:"Mercedes",
+        model:"S500",
+        color: "blue",
+        age:"2020",
+        driver:{
+          name:"Ali",
+          birthDate:""
+
+        }
+      };
+
+      const bus= {};
+
+      console.log(car); //{id: '123', brand: 'Mercedes', model: 'S500', color: 'blue', age: '2020'}
+      console.log(typeof(car)) //object
+      console.log(car.model) //S500
+      console.log(car.driver.name)
+      car.age = 2022
+      console.log(car.age) //2022
+
+
+      if(bus) {
+        console.log("test1");
+      }else {
+        console.log("test2")
+      }
+
+      //bir objectin dolu olup olmadigi nasil anlasilir
+
+      console.log(Object.keys(bus).length) //0
+      console.log(Object.keys(car).length) //6 
+
+
+
+
+
+
+    </script>
+   
+  </body>
+</html>
