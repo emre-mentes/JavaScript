@@ -25,8 +25,14 @@
       console.log(animals.slice(2,4)); //['deve', 'fare'] 
 
       console.log(animals.toString());  //fil,kus,deve,fare,kedi
+      console.log(animals.indexOf("deve")); //2 (ilk gordugu deveyi verir)
+      console.log(animals.lastIndexOf("deve")); //2 (son gordugu deveyi verir)
+      console.log(animals.lastIndexOf("at")); // -1
 
-
+      const harfler = ['a', 'b', 'c'];
+      const rakamlar = [1, 2, 3];
+      const birlesik = harfler.concat(rakamlar, 4, [5,6])
+      console.log(birlesik); //['a', 'b', 'c', 1, 2, 3, 4, 5, 6]
 
     </script>
 
