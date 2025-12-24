@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+
+    <script>
+
+      const meyveler = ["Elma","Armut","Muz", "Kivi"];
+      
+      
+      console.log(meyveler); //['Elma', 'Armut', 'Muz', 'Kivi']
+      
+      meyveler.pop()// dizinin son elemanini siler
+      console.log(meyveler); //['Elma', 'Armut', 'Muz']
+      
+      meyveler.push("Ananas") // dizininin sonuna ekler
+      console.log(meyveler); //['Elma', 'Armut', 'Muz', 'Ananas']
+      
+      meyveler.shift(); //dizinin ilk elemanini siler
+      console.log(meyveler); //['Armut', 'Muz', 'Ananas']
+      
+      meyveler.unshift("Cilek"); // dizininin basina ekler
+      console.log(meyveler); //['Cilek', 'Armut', 'Muz', 'Ananas']
+
+      meyveler.reverse(); // tersine cevirir
+      console.log(meyveler); //['Ananas', 'Muz', 'Armut', 'Cilek']
+      meyveler.sort()
+      console.log(meyveler) //['Ananas', 'Armut', 'Cilek', 'Muz']
+      meyveler.splice(2,0,"kiraz","Visne")
+      console.log(meyveler) //['Ananas', 'Armut', 'kiraz', 'Visne', 'Cilek', 'Muz']
+      meyveler.splice(2,2)
+      console.log(meyveler)//  ['Ananas', 'Armut', 'Cilek', 'Muz']
+
+      meyveler.splice(0,meyveler.length)
+      console.log(meyveler) // []
+
+
+  
+
+
+
+ 
+          
+    
+
+
+
+        
+
+      
+
+      
+
+    </script>
+   
+  </body>
+</html>
