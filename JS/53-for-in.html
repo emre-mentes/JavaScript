@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+
+      const animals = ["fil", "kus", "deve","kus", "fare", "kedi", "kus"];
+
+      for(let i in animals) {
+       // console.log(i, animals[i])
+
+      }
+      
+
+      for(let animal of animals) {
+       // console.log(animal[i])
+
+      }
+      
+
+      for(let [ index, animal ]of animals.entries()) {
+             console.log(index, animal) /* 0 'fil'
+                                           1 'kus'
+                                           2 'deve'
+                                           3 'kus'
+                                           4 'fare'
+                                           5 'kedi'
+                                           6 'kus' */
+
+      }
+      
+    </script>
+
+
+
+
+
+
+   
+  </body>
+</html>
