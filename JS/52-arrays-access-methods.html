@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+
+      const animals = ["fil", "kus", "deve", "fare", "kedi"];
+
+      console.log(animals); //['fil', 'kus', 'deve', 'fare', 'kedi']
+
+      console.log(animals.includes("fil")); // true
+      console.log(animals.includes(3)); // false
+
+      console.log(animals.join());    // fil,kus,deve,fare,kedi
+      console.log(animals.join(""));  // filkusdevefarekedi
+      console.log(animals.join("-")); // fil-kus-deve-fare-kedi
+
+      console.log(animals.slice(2));  //['deve', 'fare', 'kedi']
+      console.log(animals); //['fil', 'kus', 'deve', 'fare', 'kedi']
+      console.log(animals.slice(2,4)); //['deve', 'fare'] 
+
+      console.log(animals.toString());  //fil,kus,deve,fare,kedi
+
+
+
+    </script>
+
+
+
+
+
+
+   
+  </body>
+</html>

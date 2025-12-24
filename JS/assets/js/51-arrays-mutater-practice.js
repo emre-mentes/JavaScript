@@ -40,7 +40,7 @@ document.querySelector("#btnMix").addEventListener("click", () => {
 document.querySelector("#btnAddCity").addEventListener("click", () =>{
    
    const city = document.querySelector("#txtCity").value;
-   if(!city) return;
+   if(!city || cities.includes(city)) return;
    cities.push(city)
    
    loadList();
