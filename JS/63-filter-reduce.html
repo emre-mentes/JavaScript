@@ -21,6 +21,20 @@
       const t = nums.reduce(  (total, x) => total + x, 0 );
       console.log(t);
 
+      //reduce example
+
+      const salaries = [2000,2500,5500,10000,1000,1500];
+
+     const totalSalary= salaries.filter( (salary)=> salary <3000 )
+     .map( (salary) => salary*1.1 )
+     .reduce( (total, salary) => total+salary);
+
+
+
+
+     console.log(totalSalary)  
+
+
 
     </script>
 
