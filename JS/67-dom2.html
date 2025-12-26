@@ -14,8 +14,13 @@
    
     <ul>
       <li><a href="http://">Link1</a></li>
-      <li><a href="https://google.com" id="lnk">Link2</a></li>
+      <li>
+        <a href="https://google.com" id="lnk">Link2</a>
+      </li>
       <li><a href="http://">Link3</a></li>
+      <li><a href="http://">Link4</a></li>
+      <li><a href="http://">Link5</a></li>
+      <li><a href="http://">Link6</a></li>
     </ul>
 
      </div>
@@ -24,13 +29,18 @@
 
       document.querySelector("#lnk").addEventListener("click", (e) => {
         e.preventDefault();
-        
 
-
-
+       e.target.closest(".menu").querySelector(".desc").innerHTML="HELLO WORLD";
 
 
       });
+
+      console.log(document.querySelector(".menu ul").children)
+      console.log(document.querySelector("#lnk").parentElement.parentElement)
+      console.log(document.querySelector("#lnk").parentElement.nextElementSibling)
+      console.log(document.querySelector("#lnk").parentElement.previousElementSibling)
+      console.log(document.querySelector("#lnk").parentElement.parentElement.children)
+
 
 
 
